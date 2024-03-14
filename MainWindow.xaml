@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gadget_shop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="800">
     <Grid Background="LightGray" Margin="5">
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -16,11 +16,13 @@
         <DataGrid x:Name="dataGrid" AutoGenerateColumns="True" Grid.Row="1" Width="600" ColumnWidth="*" />
         <!--<ListBox Name="listBox1" Grid.Row="1" FontSize="16" Margin="10" Padding="10" Height="auto" Width="auto" BorderBrush="DarkGray" BorderThickness="1"/>-->
         <DockPanel Grid.Row="2">
-            <Button  Content="add product" Click="ViewProduct" Width="100" Height="50" Margin="5" HorizontalAlignment="Left" />
-            <Button  Content="add printer" Click="ViewPrinter"  Width="100" Height="50" Margin="5" />
-            <Button  Content="add pc" Click="ViewPC"  Width="100" Height="50" Margin="5" />
-            <Button  Content="add laptop" Click="ViewLaptop"  Width="100" Height="50" Margin="5" />
-            <Button  Content="Refresh" Width="100" Height="50" Margin="5" HorizontalAlignment="Right" />
+            <Button  Content="view product" Click="ViewProduct" Width="100" Height="50" Margin="5" HorizontalAlignment="Left" />
+            <Button  Content="view printer" Click="ViewPrinter"  Width="100" Height="50" Margin="5" />
+            <Button  Content="add product" Click="AddNewProduct"  Width="100" Height="50" Margin="5" />
+            <Button  Content="add printer" Click="Button_Click"  Width="100" Height="50" Margin="5" />
+            <Button  Content="changeTypeProduct" Click="ChangeTypeProduct"  Width="100" Height="50" Margin="5" />
+            <Button  Content="select" Click="LeftJoinProductPrinter"  Width="100" Margin="5" HorizontalAlignment="Left" />
+            <Button  Content="delete" Click="Delete" Width="100" Height="50" Margin="5" HorizontalAlignment="Right" />
         </DockPanel>
     </Grid>
 </Window>

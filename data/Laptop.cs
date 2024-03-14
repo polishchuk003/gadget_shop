@@ -11,9 +11,11 @@ namespace gadget_shop.data
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Laptop
     {
+        [Key]
         public int code { get; set; }
         public string model { get; set; }
         public short speed { get; set; }
